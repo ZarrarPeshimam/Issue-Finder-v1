@@ -1,0 +1,36 @@
+.wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 48px;
+  animation: slideUp 0.4s ease both;
+}
+
+.iconBox {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: var(--accent-dim);
+  border: 1px solid var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent2);
+  margin-top: 2px;
+}
+
+.title {
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  color: var(--text2);
+  font-size: 13px;
+  line-height: 1.6;
+  font-family: var(--font-mono);
+  max-width: 500px;
+}

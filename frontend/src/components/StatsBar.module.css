@@ -1,0 +1,49 @@
+.bar {
+  display: flex;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.cell {
+  flex: 1;
+  padding: 14px 16px;
+  background: var(--surface);
+}
+
+.bordered {
+  border-right: 1px solid var(--border);
+}
+
+.accent {
+  background: var(--accent-dim);
+}
+
+.cellLabel {
+  display: block;
+  font-size: 11px;
+  color: var(--text3);
+  font-family: var(--font-mono);
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.cellValue {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text);
+  font-family: var(--font-head);
+  word-break: break-all;
+}
+
+.accent .cellValue {
+  color: var(--accent2);
+}
+
+.cellValue[data-small="true"] {
+  font-size: 13px;
+  font-family: var(--font-mono);
+}

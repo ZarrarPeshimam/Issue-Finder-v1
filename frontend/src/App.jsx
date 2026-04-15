@@ -13,7 +13,13 @@ const API_BASE = import.meta.env.VITE_API_BASE;
 export default function App() {
   const [repoUrl, setRepoUrl] = useState("");
   const [maxComments, setMaxComments] = useState(0);
-  const [mode, setMode] = useState("normal");
+  const [mode, setMode] = useState(() => {
+    return localStorage.getItem("op-mode") || "normal";
+  });
+
+  useEffect(() => {
+    localStorage.setItem("op-mode", mode);
+  }, [mode]);
 
   const [initialLoading, setInitialLoading] = useState(true);   // Full screen on load
   const [loading, setLoading] = useState(false);                // Small spinner on Search
